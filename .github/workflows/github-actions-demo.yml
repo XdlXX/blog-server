@@ -19,7 +19,7 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - name: Deploy to Server
-        uses: easingthemes/ssh-deploy@2
+        uses: easingthemes/ssh-deploy@main
         env:
           SSH_PRIVATE_KEY: ${{ secrets.SERVER_SSH_KEY }}
           ARGS: "-rltgoDzvO --delete"
