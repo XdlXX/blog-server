@@ -7,9 +7,9 @@ jobs:
     steps:
       - run: echo "Start Jpb"
       - run: |
-        echo  ${{ secrets.SERVER_SSH_KEY }}
-        echo  ${{ secrets.REMOTE_HOST }}
-        echo  ${{ secrets.REMOTE_USER }}
+        echo "${{ secrets.SERVER_SSH_KEY }}"
+        echo "${{ secrets.REMOTE_HOST }}"
+        echo "${{ secrets.REMOTE_USER }}"
 
       # - name: Check out repository code
       #   uses: actions/checkout@v2
