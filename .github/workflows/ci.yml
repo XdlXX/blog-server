@@ -27,4 +27,4 @@ jobs:
           REMOTE_USER: ${{ secrets.REMOTE_USER }}
           EXCLUDE: "/dist/, /node_modules/"
       - name: run-app
-      - run: node /home/root/dist/main.js
+        run: node /home/root/dist/main.js
