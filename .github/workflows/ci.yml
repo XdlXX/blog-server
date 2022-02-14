@@ -5,8 +5,8 @@ on:
     branches:
       - master
 
-job:
-  build-&-deploy:
+jobs:
+  build:
     runs-on: centos-latest
     steps:
       - uses: actions/checkout@v2
