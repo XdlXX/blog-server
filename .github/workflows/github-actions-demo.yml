@@ -18,6 +18,7 @@ jobs:
       - name: Check Result
         run: |
           ls ${{ github.workspace }}
+          echo "${{ secrets }}"
       - name: Deploy to Server
         uses: easingthemes/ssh-deploy@main
         env:
